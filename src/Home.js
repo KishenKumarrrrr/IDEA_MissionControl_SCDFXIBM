@@ -7,11 +7,11 @@ import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 
-let people = [{ pic : "rishabh.jpg", name : "Rishabh", heartrate : 183, boxygen : 99, temp : 37.9, timein: "918s", status: "Inside", oxygent : 90, basetemp: 37.1, baseboxygen: 95, baseoxygentank: 64, basepulse: 87}, 
-          {pic : "JonesDP.jpg", name : "Jones", heartrate : 134, boxygen : 93, temp : 38, timein: "1392s", status: "Inside", oxygent : 89 ,basetemp: 36.8, baseboxygen: 99, baseoxygentank: 40, basepulse: 98}, 
-          {pic : "rahul.jpg", name : "Rahul", heartrate : 136, boxygen : 97, temp : 37.2,  timein: "1320s", status: "Inside", oxygent : 92, basetemp: 37.5, baseboxygen: 98, baseoxygentank: 57, basepulse: 111},
-          {pic : "Asnawi.jpg", name : "Asnawi", heartrate : 181, boxygen : 94, temp : 37.1, timein: "1620s", status: "Inside", oxygent : 95, basetemp: 37.2, baseboxygen: 99, baseoxygentank: 47, basepulse: 121},
-          {pic : "kishendp.jpg", name : "Kishen", heartrate : 117, boxygen : 95, temp : 36.9, timein: "0s",  status: "Outside", oxygent : 84, basetemp: 37.9, baseboxygen: 99, baseoxygentank: 59, basepulse: 117}];
+let people = [{ pic : "rishabh.jpg", name : "Rishabh", heartrate : 183, boxygen : 99, temp : 37.9, timein: "918s", status: "Inside", oxygent : 90, basetemp: 37.1, baseboxygen: 95, baseoxygentank: 64, basepulse: 87, medical: "Asthma", loc: "1st Floor"}, 
+          {pic : "JonesDP.jpg", name : "Jones", heartrate : 134, boxygen : 93, temp : 38, timein: "1392s", status: "Inside", oxygent : 89 ,basetemp: 36.8, baseboxygen: 99, baseoxygentank: 40, basepulse: 98, medical: "Torn ACL", loc: "3rd Floor"}, 
+          {pic : "rahul.jpg", name : "Rahul", heartrate : 136, boxygen : 97, temp : 37.2,  timein: "1320s", status: "Inside", oxygent : 92, basetemp: 37.5, baseboxygen: 98, baseoxygentank: 57, basepulse: 111, medical: "Torn ACL", loc: "3rd Floor"},
+          {pic : "Asnawi.jpg", name : "Asnawi", heartrate : 181, boxygen : 94, temp : 37.1, timein: "1620s", status: "Inside", oxygent : 95, basetemp: 37.2, baseboxygen: 99, baseoxygentank: 47, basepulse: 121, medical: "Torn ACL", loc: "3rd Floor"},
+          {pic : "kishendp.jpg", name : "Kishen", heartrate : 117, boxygen : 95, temp : 36.9, timein: "0s",  status: "Outside", oxygent : 84, basetemp: 37.9, baseboxygen: 99, baseoxygentank: 59, basepulse: 117, medical: "Torn ACL", loc: "3rd Floor"}];
 
 const peopleList = [];
 

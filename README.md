@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IDEA_MissionControl_SCDFXIBM
 
-## Available Scripts
+### Team Information
+Team Name: Idea
 
-In the project directory, you can run:
+Members:
+- Jones Lim
+- Kishen Ashok Kumar
+- Rishabh Paliwal
+- Muhammad Asnawi bin Wahid
+- Rahul Datta 
 
-### `npm start`
+## 1. Problem Statement & Solution
+Leveraging IOT to help commanders on the ground improve their command and control and help them make better decisions.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+During large-scale operations where decisions need to be made almost instantaneously, the staging crew need to have a holistic understanding of the crew and the situation at hand in order to make the best decisions possible.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Currently, the staging crew’s understanding of the situation at hand is often left to manual means or direct and frequent communication with firefighters engaged in the danger zone. Manual recording of firefighter movement in and out of the danger zone might lead to clerical errors. Also, direct communication diverts the firefighters’ attention from the task at hand and may compromise their personal safety and efficiency in getting the job done. Our team proposes an end-to-end solution called Mission Control that encompasses a slew of wearables for crew members and as well as accompanying software. Information will be collected from our wearables, FASTpods (earbuds) and FASTband (wristband). The information collected will be passed to FAST (Firefighting Analysis Staging Tool), a dashboard for the staging crew for details of the situation on hand. Furthermore, vital information can be personalized to each firefighter by collecting their biometrics during their training phases via the wristbands. This will give the staging crew a better understanding of each individual’s personal health and tolerance levels, so that they can make a decision on whether the firefighter should evacuate the danger zone.
 
-### `npm test`
+## 2. PITCH:
+https://youtu.be/GARB-vDHS7Y
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. Architecture
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/archi.png?raw=true)
 
-### `npm run build`
+## 4. Detailed Solution
+https://docs.google.com/document/d/1vaHihtZk1bkRmhXWnUEA3x1svw3zeWIGHPECcQrVoWE/edit?usp=sharing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 5. Proposed timeline
+We propose a 3 step implementation:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- 1. Testing on new recruits and trainees: this is in order to test if the systems function and if they can easily be adopted by new members of the force
+- 2. Testing with operational personnel: after it is established that the system works without bugs and failures, it can be tested on more experienced operational personnel who can spot potential pitfalls and issues that trainees cannot due to their experience.
+- 3. Finally, a phased go-live. The SCDF can adopt the technology slowly across units based on budgeting and which units would benefit the most from an advanced system like Mission Control based on the volume and complexity of operations that are commonly carried out by the respective units.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 6.Getting Started (Step by step instructions)
 
-### `npm run eject`
+Before you begin:
+- Step 1: Head to the Watson IoT Platform service page on IBM Cloud and sign up / login to your IBM Cloud account.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Step 2: Click the “Create” button on the bottom right corner of the page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Create.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Step 3: Click “Launch” to enter the Watson IoT Platform
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Launch.png?raw=true)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Step 4: From the main navigation pane, select Settings.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Settings.png?raw=true)
 
-### Code Splitting
+- Step 5: In the Data and Devices section, activate the device simulator. Simulating Devices as well as the Last Event Cache (LEC) and set it to “1 day”
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Device-Sim.png?raw=true)
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Last-Event-Cache.png?raw=true)
 
-### Analyzing the Bundle Size
+- Step 6: From the Watson IoT Platform dashboard, click the "0 Simulations running" message.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/0Sim.png?raw=true)
 
-### Making a Progressive Web App
+- Step 7: Click the “Import/Export simulation” button and import from this file then select “Replace current configuration”.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Import-Export.png?raw=true)
 
-### Advanced Configuration
+- Step 8: After importing the simulation, in the same pop-up menu, flip the two switches on the right hand side to start the simulation.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+![alt text](https://github.com/KishenKumarrrrr/IDEA_MissionControl_SCDFXIBM/blob/readme/Start.png?raw=true)
 
-### Deployment
+### Setting up ReactJS and NodeJS
+- Step 1: Install NodeJS following this step-by-step guide.
+- Step 2: Install and run ReactJS using this guide.
+- Step 3: Download the project files from this github repo and paste them into the “my-app” folder created during the previous step
+- Step 4: Open up your terminal in the “my-app” project folder then run the following command to install the project dependencies
+```
+npm install @material-ui/core @material-ui/icons axios chart.js chartjs-plugin-datalabels install react-chartjs-2 react-player react-router react-virtualized react-window redux video-react
+```
+- Step 5: Type npm start in the terminal to run the React app which should automatically open your browser to the web address http://localhost:3000 where you will be able to see the Dashboard!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## 7. Live Demo
+https://youtu.be/5pQfqDc3Ufk
 
-### `npm run build` fails to minify
+## 8. Technologies Used:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Hardware
+    * Wristband (FASTband)
+    * Earbuds (FASTpods)
+    * Bluetooth Beacon
+    * On-helmet camera
+- IBM Watson IOT Platform
+- ReactJS (FAST Dashboard)

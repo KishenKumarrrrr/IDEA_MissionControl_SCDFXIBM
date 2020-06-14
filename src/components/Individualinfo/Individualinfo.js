@@ -21,11 +21,11 @@ export default function Individualinfo(props) {
                 <div className = {styles.current2}>
                 <h1 className ={styles.text}>Location Estimate</h1>
                 </div>
-                <h1 className ={styles.textinfo}>3rd Floor</h1>
+                <h1 className ={styles.textinfo}>{props.person.loc}</h1>
                 <div className = {styles.current}>
                 <h1 className ={styles.text}>Medical History</h1>
                 </div>
-                <h1 className ={styles.textinfo}>Asthma</h1>
+                <h1 className ={styles.textinfo}>{props.person.medical}</h1>
             </div>
         </div>
     );
