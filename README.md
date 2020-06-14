@@ -11,6 +11,12 @@ Members:
 - Rahul Datta 
 
 ## 1. Problem Statement & Solution
+
+Challenge Statement 2: Climate Change
+Climate change is inevitable, with projected increase in temperatures leading to phenomena such as the Urban Heat Island effect. This leads to an environment and climate where it is increasingly physically challenging for First Responders to train and operate to maximum efficiency and performance. How might SCDF leverage wearables or other technologies to provide relief or enhancement in harsh operating conditions and maximise the safety, health and performance of First Responders during training and operations?
+
+Solution:
+
 Leveraging IOT to help commanders on the ground improve their command and control and help them make better decisions.
 
 During large-scale operations where decisions need to be made almost instantaneously, the staging crew need to have a holistic understanding of the crew and the situation at hand in order to make the best decisions possible.
